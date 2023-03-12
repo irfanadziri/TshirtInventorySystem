@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>T-Shirt Booking System</title>
+        <title>T-Shirt Inventory System</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -146,14 +146,14 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">T-Shirt Booking System</a> <!-- direct the page -->
+                <a class="navbar-brand" href="homePage.php">T-Shirt Inventory System</a>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Search</a> <!-- direct the page -->
+                            <a class="nav-link" href="searchInventory.php">Search</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">View Record</a> <!-- direct the page -->
+                            <a class="nav-link" href="listInventory.php">View Record</a>
                         </li>
                     </ul>
                 </div>
@@ -169,14 +169,17 @@
                     <div class="form-group">
                         <label for="brand">Brand</label>
                         <input type="text" class="form-control" id="brand" name="brand" placeholder="Enter brand name">
+                        <!-- query the brand sql here -->
                     </div>
                     <div class="form-group">
                         <label for="color">Color</label>
                         <input type="text" class="form-control" id="color" name="color" placeholder="Enter shirt color">
+                        <!-- query the color sql here -->
                     </div>
                     <div class="form-group">
                         <label for="size">Size</label>
                         <input type="text" class="form-control" id="size" name="size" placeholder="Enter shirt size">
+                        <!-- query the size sql here -->
                     </div>
                     <div>
                         <button type="submit" name="add" href="#" class="btn btn-primary">Add Record</button> <!-- direct the page -->

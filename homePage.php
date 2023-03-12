@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>T-Shirt Booking System</title>
+        <title>T-Shirt Inventory System</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,8 +41,8 @@
                 height: 100vh;
             }
             h1 {
-                width: 690px;
-                height: 64px;
+                width: auto;
+                height: auto;
                 font-family: Outfit;
                 font-style: normal;
                 font-weight: 600;
@@ -130,25 +130,19 @@
         <div class="ellipse"></div>
         <div class="ellipse2"></div>
         <div class="container1">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>T-Shirt Booking System</h1>
-                </div>
-            </div>
+            <h1>T-Shirt Inventory System</h1>
             <div class="container2">
-                <form>
-                    <h6>Welcome back</h6>
-                    <h2>What do you want to do?</h2>
-                    <div>
-                        <button type="submit" name="login" href="#" class="btn btn-primary">Add T-Shirt</button> <!-- direct the page -->
-                    </div>
-                    <div>
-                        <button type="submit" name="login" href="#" class="btn btn-primary">Inventory</button> <!-- direct the page -->
-                    </div>
-                    <div>
-                        <button type="submit" name="login" href="#" class="btn btn-secondary">Logout</button> <!-- direct the page -->
-                    </div>
-                </form>
+                <h6>Welcome back</h6>
+                <h2>What do you want to do?</h2>
+                <div>
+                    <button type="buttton" name="add" onclick="location.href='addShirt.php'" class="btn btn-primary">Add T-Shirt</button>
+                </div>
+                <div>
+                    <button type="button" name="list" onclick="location.href='listInventory.php'" class="btn btn-primary">Inventory</button>
+                </div>
+                <div>
+                    <button type="button" name="login" onclick="location.href='#'" class="btn btn-secondary">Logout</button> <!-- direct the page -->
+                </div>
             </div>
         </div>
     </body>
